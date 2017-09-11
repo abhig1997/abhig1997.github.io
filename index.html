@@ -30,6 +30,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
+  <a href="#jobs_section" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  	<i class="fa fa-suitcase w3-xxlarge"></i>
+  	<p>EXPERIENCE</p>
+  </a>
   <a href="#skill_bars" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
   	<i class="fa fa-bar-chart w3-xxlarge"></i>
   	<p>SKILLS</p>
@@ -41,16 +45,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </nav>
 <!-- End Icon Bar -->
 
+
+
+
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <!-- <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a> -->
+    <a href="#jobs_section" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
+    <a href="#skill_bars" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
 <!-- End small screen navbar -->
+
+
+
 
 
 <!-- Page Content -->
@@ -64,7 +75,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-white w3-padding-64" id="about_section">
-    <h2 class="w3-text-light-grey">About Me</h2>
+    <h1 class="w3-text-light-grey">About Me</h1>
     <hr style="width:200px" class="w3-opacity">
     <p>Hey everyone, I'm a junior studying Computer Science at Purdue University, with a minor in Economics. I was born in Albuquerque, New Mexico, but I've
     lived in Silicon Valley for most of my life. My interest in programming began in my freshman year of high school, and has continued to grow ever since. I've learned many different programming languages, and have applied my knowledge to internships and a variety of side projects. Head over to my GitHub/LinkedIn using the links below, or download my resume in PDF format.
@@ -91,9 +102,60 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	</a>
   </div>
 
+
+
+
+  <!-- Begin Job Experience Section -->
+  <div class="w3-content w3-justify w3-text-white w3-padding-64" id="jobs_section">
+  	<h1 class="w3-text-light-grey">Job Experience</h1>
+  	<hr style="width:200px" class="w3-opacity">
+	<ul>
+    	<li><h3> <b>Aviatrix Systems</b>, Palo Alto, CA - Software Engineer Intern (May 2017 - August 2017)</h3></li>
+    	<ul>
+           		<li><h5><b>Created CLI to automate cloud setup of sample testbeds</b></h5></li>
+            		<ul>
+            			<li> automating cloud setup process in Azure, Google Cloud Platform, and Amazon Web Services</li>
+            			<li> Extensive use of respective SDKs to control launch of VPCs/instances and the company product </li>
+            			<li> CLI tool is used by Aviatrix cloud engineers to automate the testing of product in the different cloud services </li>
+            		</ul>
+    	</ul>
+
+    	<li><h3> <b>ShieldX Networks</b>, San Jose, CA - Software Development Intern (May 2016 - August 2016)</h3>
+        	<ul>
+           		<li><h5><b>Threat detection for applications</b></h5></li>
+           			<ul>
+           				<li>Worked on threat detection rules designed to detect application requests on a network </li>
+           					<ul>
+           						<li> I used Wireshark and Fiddler to analyze pcap files, found strings common to the various HTTP requests, and used those “identifiers” to optimize the rules </li>
+           					</ul>
+           				<li> Utilized Amazon Web Services and Docker to create pcap files </li>
+           					<ul>
+           						<li> I then used the pcap files I made to create more rules and expand the coverage on those applications </li>
+           					</ul>
+       					<li> Created ~2000 threat detection rules, and modified ~1000 existing rules </li>
+           			</ul>
+        	</ul>
+    	</li>
+
+    	<li><h3> <b>Berkeley Foundation for Opportunities in Information Technology (BFOIT)</b>, UC Berkeley (May 2014 - August 2014) </h3></li>
+    	<ul>
+           		<li><h5><b>Frontend Android development</b></h5></li>
+            		<ul>
+            			<li> Connected the app to a neural network, that used the phone camera to check for security risks </li>
+            			<li> Presented research findings at BFOIT research symposium</li>
+            		</ul>
+        	</ul>
+	</ul>
+
+  </div>
+
+  <!-- End Job Experience Section -->
+  
+
   <!-- Begin Technical Skill bars -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="skill_bars">
   	<h2 class="w3-padding-16 w3-text-white">Technical Skills</h2>
+  	<hr style="width:200px" class="w3-opacity"><br>
 
   	<p class="w3-wide" style="color:white">Microsoft Office</p>
     <div class="w3-white">
@@ -126,6 +188,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div><br>
 
     <p class="w3-wide" style="color:white">Mobile App Development</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+
+    <p class="w3-wide" style="color:white">Docker</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:80%"></div>
     </div><br>
